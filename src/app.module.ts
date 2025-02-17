@@ -5,6 +5,8 @@ import { AppService } from './app.service';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { AuthModule } from './auth.module';
+import { ProfileModule } from './profile/profile.module';
+import { ChatModule } from './chat/chat.module';
 
 @Module({
   imports: [
@@ -13,6 +15,8 @@ import { AuthModule } from './auth.module';
       global : true,
     }),
     AuthModule,
+    ProfileModule,
+    ChatModule,
   ],
   controllers: [AppController],
   providers: [AppService],

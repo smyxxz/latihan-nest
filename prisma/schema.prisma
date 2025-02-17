@@ -19,6 +19,7 @@
     kelas String
     jurusan String
     jenis_kelamin Jenis_kelamin
+    foto_profile String?
   }
 
   enum Jenis_kelamin {
@@ -32,6 +33,7 @@
     password String
     role UserRole
     create_at DateTime @default(now())
+    foto_profile String?
   }
 
   enum UserRole {
